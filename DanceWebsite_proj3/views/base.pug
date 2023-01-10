@@ -1,0 +1,31 @@
+doctype html 
+html
+    head 
+        title ZELLBURY 
+        block scripts 
+        block style 
+    body 
+        //- navbar is added to the base.pug template -> since navbar would alwasy be present in a website may it be home contact form or whateacvr 
+        
+        nav#navbar.top
+            ul
+                div#logo
+                    img(src="../static/images/new.jfif")
+                    div Z E L L B U R Y
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/contact") Contact US]
+                li #[a(href="/") Class info] 
+
+        block content 
+        footer#footer
+            h5 Copyright @ 2020 ZELLBURY DANCE ACADEMY. All rights reserved.       
+ 
+
+
+
+
+
+                //- These blocks made in base.pug whichis the template.
+                //- are defined in detail in home.pug 

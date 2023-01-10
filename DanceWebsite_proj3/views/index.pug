@@ -1,0 +1,69 @@
+//- index.pug
+doctype html
+html
+    head 
+        style 
+            include ../static/style.css
+    body
+        
+        nav#navbar.top
+            ul
+                div#logo
+                    img(src="../static/images/new.jfif")
+                    div Z E L L B U R Y
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Contact US]
+                li #[a(href="/") Class info] 
+
+
+        section#intro 
+            div Welcome to our Dance Academy ! 
+            div.small ~Eat Sleep Dance Repeat~ 
+        section#mission 
+            h2 Our Mission:-
+            //- how to make a design cards  -> lec 76 
+            div.card
+                h3  Dance Perfection
+                div.cardBox
+                    div.card-img
+                        img(src="../static/images/1.png")
+                    div.card-content
+                        p This is teh best dance academy of  Los Angeles     
+
+
+            div.card#second
+                h3 Dance the way you like 
+                 div.cardBox
+                    div.card-img
+                        img(src="../static/images/sol.png")
+                    div.card-content
+                        p This is teh best dance academy of  Los Angeles     
+
+
+            div.card
+                h3  Express yourself 
+                div.cardBox
+                    div.card-img
+                        img(src="../static/images/s.png")
+                    div.card-content
+                        p This is teh best dance academy of  Los Angeles     
+
+
+        section#sponsor 
+            h2 Our Sponsors
+            div#sponsors  
+                img(src="/static/images/2.png", alt="sponsor image" , class="spImg")
+                img(src="/static/images/R (1).png", alt="sponsor image" , class="spImg")
+                img(src="/static/images/R.jfif", alt="sponsor image" , class="spImg")
+                img(src="/static/images/R.png", alt="sponsor image" , class="spImg")
+
+        footer#footer
+            h5 Copyright @ 2020 ZELLBURY DANCE ACADEMY. All rights reserved.       
+
+
+
+
+        script 
+            include ../static/index.js
